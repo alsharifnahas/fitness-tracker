@@ -19,7 +19,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
     useCreateIndex: true,
 });
 app.use(logger("dev"));
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { useNewUrlParser: true });
+
 app.listen(PORT, () => {
     console.log(`app is listening on ${PORT}`)
 });
