@@ -25,7 +25,7 @@ Modify the `server.js` and `/seeders/seed.js` connections to match your MongoDB 
 
 ## Usage
 
-Link to the deployed site: https://git.heroku.com/gentle-garden-26424.git
+Link to the deployed site: https://gentle-garden-26424.herokuapp.com/
 
 ## Credits
 
