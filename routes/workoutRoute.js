@@ -27,11 +27,12 @@ router.post("/api/workouts/:id", ({ body }, res) => {
         res.json(workout);
     });
 });
-router.put("/api/workouts/", ({ body }, res) => {
+router.put("/api/workouts/:id", (req, res) => {
+
     const id = req.params.id;
 
     db.Workout.findByIdAndUpdate(id, {
-        $push: { exercises: body }
+        $push: { exercises: req.body }
     })
         .then((workout) => {
             res.json(workout);
