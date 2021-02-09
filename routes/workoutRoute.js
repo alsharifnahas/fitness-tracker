@@ -22,7 +22,7 @@ router.get("/api/workouts/", (req, res) => {
     })
 });
 
-router.post("/api/workouts/:id", ({ body }, res) => {
+router.post("/api/workouts/", ({ body }, res) => {
     db.Workout.create(body).then((workout) => {
         res.json(workout);
     });
